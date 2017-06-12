@@ -46,4 +46,5 @@ RUN useradd -u 1001 -r -c "Zookeeper User" $ZK_USER && \
 
 WORKDIR "/opt/zookeeper"
 
-USER 1001
+# Commented out due to group permission issues
+# USER 1001
