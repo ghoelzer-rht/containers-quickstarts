@@ -22,7 +22,7 @@
         {
             "description": "Git source URI for application",
             "name": "SOURCE_REPOSITORY_URL",
-            "value": "https://github.com/redhat-cop/containers-quickstarts",
+            "value": "https://github.com/ghoelzer-rht/containers-quickstarts",
             "required": true
         },
         {
@@ -40,7 +40,7 @@
         {
             "description": "Base ImageStream Tag",
             "name": "BASE_IMAGESTREAMTAG",
-            "value": "rhel7:7.2",
+            "value": "rhel7:latest",
             "required": false
         }
     ],
