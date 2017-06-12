@@ -44,9 +44,9 @@ RUN mkdir -p $ZK_DATA_DIR $ZK_DATA_LOG_DIR $ZK_LOG_DIR /usr/share/zookeeper /tmp
     /usr/local/bin/fix-permissions $ZK_LOG_DIR && \
     /usr/local/bin/fix-permissions /tmp/zookeeper
 
-RUN useradd -u 1001 -r -c "Zookeeper User" $ZK_USER
+# Remove reference to user 1001 all together
+RUN useradd -u 10015000 -r -c "Zookeeper User" $ZK_USER
 
 WORKDIR "/opt/zookeeper"
 
-# Commented out due to group permission issues
-# USER 1001
+USER 10015000
